@@ -89,7 +89,7 @@ section {
 }
 
 /* Projects Section */
-#projects {
+/* #projects {
     text-align: left;
 }
 #projects h2 {
@@ -106,7 +106,106 @@ section {
 }
 .project-card:hover {
     transform: scale(1.05);
+} */
+
+/*Project section v2*/
+#projects {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f9fa;
 }
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #007bff;
+    position: relative;
+}
+
+#projects h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #007bff;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+    border-top: 4px solid #007bff;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    color: #0056b3;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.project-details {
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+.project-details li {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 5px;
+    list-style-type: square;
+}
+
+.project-features {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.project-features li {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.learn-more:hover {
+    background: #0056b3;
+}
+
 
 /* Contact Section */
 #contact {
@@ -116,7 +215,7 @@ section {
     text-align: center;
     color: #007bff;
 }
-.contact-form {
+/* .contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,7 +227,7 @@ section {
     border-radius: 6px;
     border: 1px solid #ccc;
     font-size: 16px;
-}
+} */
 button {
     width: 400px;
     padding: 14px 25px;
@@ -174,6 +273,75 @@ button a {
     display: inline-block;
     font-size: 16px;
 }
+/* Contact */
+/* Contact Section Enhancements */
+#contact {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+#contact h2 {
+    color: #007bff;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 80%;
+    max-width: 400px;
+}
+
+.contact-item i {
+    font-size: 22px;
+    color: #007bff;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: #6610f2;
+}
+
+.contact-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-item {
+        width: 90%;
+    }
+}
+
 
 /* Footer */
 footer {
